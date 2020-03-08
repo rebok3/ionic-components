@@ -1,0 +1,94 @@
+<app-header title="ProgressBar & Range"></app-header>
+
+<ion-content class="outer-content">
+
+  <section>
+    <header>ProgressBar</header>
+    <!-- Default Progress Bar -->
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Default</ion-label>
+      </ion-list-header>
+      <ion-progress-bar></ion-progress-bar>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Default at 50%</ion-label>
+      </ion-list-header>
+      <ion-progress-bar [value]="percentage"></ion-progress-bar>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Color</ion-label>
+      </ion-list-header>
+
+      <!-- Progress Bar with Color -->
+      <ion-progress-bar color="secondary" [value]="percentage"></ion-progress-bar>
+      <ion-progress-bar color="tertiary" value="0.8"></ion-progress-bar>
+
+      <ion-list-header>
+        <ion-label>
+          Indeterminate
+        </ion-label>
+      </ion-list-header>
+      <ion-progress-bar type="indeterminate"></ion-progress-bar>
+
+      <ion-list-header>
+        <ion-label>
+          Indeterminate (reversed)
+        </ion-label>
+      </ion-list-header>
+      <ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+
+      <ion-list-header>
+        <ion-label>
+          Buffer
+        </ion-label>
+      </ion-list-header>
+      <ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+    </ion-list>
+  </section>
+
+  <section>
+    <header>Range</header>
+    <ion-list>
+      <ion-list-header>
+        Adjust Display
+      </ion-list-header>
+
+      <ion-item>
+        <ion-range (ionChange)="changeRange( $event )"
+                    min="1"
+                    max="100"
+                    pin>
+          <ion-icon slot="start" size="small" name="sunny"></ion-icon>
+          <ion-icon slot="end" name="sunny"></ion-icon>
+        </ion-range>
+      </ion-item>
+
+      <ion-item>
+        <ion-range min="-200" max="200" pin color="secondary">
+          <ion-icon slot="start" size="small" name="contrast"></ion-icon>
+          <ion-icon slot="end" name="contrast"></ion-icon>
+        </ion-range>
+      </ion-item>
+
+      <ion-item>
+        <ion-range id="dual-range" dual-knobs pin color="dark">
+          <ion-icon slot="start" size="small" name="brush"></ion-icon>
+          <ion-icon slot="end" name="brush"></ion-icon>
+        </ion-range>
+      </ion-item>
+
+      <ion-item>
+        <ion-range min="1000" max="2000" step="100" value="1400" snaps color="danger">
+          <ion-icon slot="start" size="small" color="danger" name="thermometer"></ion-icon>
+          <ion-icon slot="end" color="danger" name="thermometer"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </ion-list>
+  </section>
+
+</ion-content>

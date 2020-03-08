@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+
+    <ion-buttons slot="start">      
+      <ion-back-button defaultHref="/"></ion-back-button>     
+    </ion-buttons>
+
+    <ion-title>Popover</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="showPop( $event )">
+        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button (click)="showPop( $event )" expand="full" color="warning">
+    <ion-icon slot="start" name="person-outline"></ion-icon>
+    <ion-label>Popover</ion-label>
+  </ion-button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="tertiary">
+
+    <ion-title>Footer</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="showPop( $event )">
+        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>

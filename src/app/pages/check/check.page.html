@@ -1,0 +1,16 @@
+<app-header title="Chebox"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Characters</ion-list-header>
+      <ion-item *ngFor="let check of data"
+                (click)="onClick(check)">
+        <ion-label>{{ check.name }}</ion-label>
+        <ion-checkbox [color]="check.color" [(ngModel)]="check.selected" slot="start"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox disabled slot="start"></ion-checkbox>
+        <ion-label>Arya Stark</ion-label>
+      </ion-item>
+  </ion-list>
+</ion-content>

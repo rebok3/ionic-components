@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ firstName }} {{ lastName }} -- {{ country }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button (click)="exitWithoutArgs()" expand="full" shape="round">
+    Exit without arguments
+  </ion-button>
+
+  <ion-button (click)="exitWithArgs()" expand="full" shape="round" color="secondary">
+    Exit with arguments
+  </ion-button>
+
+</ion-content>

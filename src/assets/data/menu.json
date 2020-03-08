@@ -1,0 +1,112 @@
+[
+  {
+    "icon": "shield-outline",
+    "name": "Action Sheet",
+    "redirectTo": "/action-sheet"
+  },
+  {
+    "icon": "alert-circle-outline",
+    "name": "Alert",
+    "redirectTo": "/alert"
+  },
+  {
+    "icon": "person-circle-outline",
+    "name": "Avatar",
+    "redirectTo": "/avatar"
+  },
+  {
+    "icon": "radio-button-on",
+    "name": "Buttons & Router",
+    "redirectTo": "/buttons"
+  },
+  {
+    "icon": "card",
+    "name": "Cards",
+    "redirectTo": "/card"
+  },
+  {
+    "icon": "checkmark-circle-outline",
+    "name": "Checkbox",
+    "redirectTo": "/check"
+  },
+  {
+    "icon": "calendar",
+    "name": "DateTime",
+    "redirectTo": "/date-time"
+  },
+  {
+    "icon": "car",
+    "name": "Fabs",
+    "redirectTo": "/fab"
+  },
+  {
+    "icon": "grid",
+    "name": "Grid - Rows",
+    "redirectTo": "/grid"
+  },
+  {
+    "icon": "infinite",
+    "name": "Infinite Scroll",
+    "redirectTo": "/infinite-scroll"
+  },
+  {
+    "icon": "hammer",
+    "name": "Input - Forms",
+    "redirectTo": "/input"
+  },
+  {
+    "icon": "list",
+    "name": "List Sliding",
+    "redirectTo": "/list"
+  },
+  {
+    "icon": "list-circle-outline",
+    "name": "List - Reorder",
+    "redirectTo": "/list-reorder"
+  },
+  {
+    "icon": "refresh-circle",
+    "name": "Loading",
+    "redirectTo": "/loading"
+  },
+  {
+    "icon": "phone-portrait",
+    "name": "Modal",
+    "redirectTo": "/modal"
+  },
+  {
+    "icon": "tablet-portrait",
+    "name": "Popover",
+    "redirectTo": "/popover"
+  },
+  {
+    "icon": "code-working",
+    "name": "ProgressBar & Range",
+    "redirectTo": "/progress-bar"
+  },
+  {
+    "icon": "arrow-down-circle-outline",
+    "name": "Refresher",
+    "redirectTo": "/refresher"
+  },
+  {
+    "icon": "search",
+    "name": "SearchBar",
+    "redirectTo": "/search-bar"
+  },
+  {
+    "icon": "copy",
+    "name": "Segment",
+    "redirectTo": "/segment"
+  },
+  {
+    "icon": "albums",
+    "name": "Slides",
+    "redirectTo": "/slides"
+  },
+  {
+    "icon": "cog",
+    "name": "Tabs",
+    "redirectTo": "/tabs/account"
+  }
+]

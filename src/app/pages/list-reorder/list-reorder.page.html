@@ -1,0 +1,19 @@
+<app-header title="List - Reorder"></app-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-reorder-group (ionItemReorder)="doReorder($event)"
+                       [disabled]="false">
+      <ion-item *ngFor="let heroe of heroes">
+        <ion-label>{{ heroe }}</ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>      
+    </ion-reorder-group>
+  </ion-list>
+
+  <ion-button (click)="onClick()" expand="full" fill="clear" shape="round">
+    Click me
+  </ion-button>
+
+</ion-content>
