@@ -14,15 +14,15 @@ const routes: Routes = [
     children: [
       {
         path: 'account',
-        loadChildren: '../avatar/avatar.module#AvatarPageModule'
+        loadChildren: () => import('../avatar/avatar.module').then( m => m.AvatarPageModule)
       },
       {
         path: 'contact',
-        loadChildren: '../list/list.module#ListPageModule'
+        loadChildren: () => import('../list/list.module').then( m => m.ListPageModule)
       },
       {
         path: 'settings',
-        loadChildren: '../infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule'
+        loadChildren: () => import('../infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollPageModule)
       }
     ]
   }
